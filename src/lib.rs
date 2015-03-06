@@ -22,4 +22,9 @@ extern "C" {
     pub fn notify_set_app_name(app_name: *const c_char);
 
     pub fn notify_get_server_caps() -> *mut GList;
+
+    pub fn notify_get_server_info(ret_name: *mut *mut c_char,
+                                  ret_vendor: *mut *mut c_char,
+                                  ret_version: *mut *mut c_char,
+                                  ret_spec_version: *mut *mut c_char);
 }
