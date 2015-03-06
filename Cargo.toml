@@ -1,0 +1,8 @@
+[package]
+
+name = "rust-libnotify-sys"
+version = "0.0.1"
+authors = ["Mika Attila <radiantstatue@gmail.com>"]
+
+[dependencies.glib-2_0-sys]
+git = "https://github.com/gi-rust/glib-sys.git"
