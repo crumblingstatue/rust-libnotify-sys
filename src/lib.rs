@@ -3,6 +3,10 @@
 extern crate libc;
 extern crate "glib-2_0-sys" as glib;
 
+pub mod notification;
+
+pub use notification::*;
+
 use libc::{
     c_char
 };
