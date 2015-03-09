@@ -2,13 +2,11 @@ use gobject::GObject;
 use libc::c_char;
 use glib::GError;
 
-pub type NotifyNotification = _NotifyNotification;
-
 #[repr(C)]
 struct NotifyNotificationPrivate;
 
 #[repr(C)]
-struct _NotifyNotification {
+pub struct NotifyNotification {
     _parent_object: GObject,
     _priv_: NotifyNotificationPrivate
 }
