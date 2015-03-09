@@ -8,13 +8,8 @@ pub mod notification;
 
 pub use notification::*;
 
-use libc::{
-    c_char
-};
-
-use glib::types::{
-    gboolean,
-};
+use libc::c_char;
+use glib::types::gboolean;
 
 use glib::GList;
 
