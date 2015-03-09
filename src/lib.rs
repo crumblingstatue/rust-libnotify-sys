@@ -16,7 +16,7 @@ use glib::types::{
     gboolean,
 };
 
-use glib::list::GList;
+use glib::GList;
 
 extern "C" {
     pub fn notify_init(app_name: *const c_char) -> gboolean;
