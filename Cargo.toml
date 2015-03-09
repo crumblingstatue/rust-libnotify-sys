@@ -7,9 +7,9 @@ authors = ["Mika Attila <radiantstatue@gmail.com>"]
 build = "build.rs"
 links = "libnotify"
 
-[dependencies.glib-2_0-sys]
-git = "https://github.com/crumblingstatue/glib-sys.git"
-branch = "integ"
+[dependencies]
+glib-2_0-sys = "*"
+gobject-2_0-sys = "*"
 
 [build-dependencies]
 pkg-config = "0.3"

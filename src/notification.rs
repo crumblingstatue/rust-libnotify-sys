@@ -1,4 +1,4 @@
-use glib::object::GObject;
+use gobject::GObject;
 use libc::c_char;
 use glib::GError;
 

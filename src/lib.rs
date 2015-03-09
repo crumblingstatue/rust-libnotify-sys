@@ -2,6 +2,7 @@
 
 extern crate libc;
 extern crate "glib-2_0-sys" as glib;
+extern crate "gobject-2_0-sys" as gobject;
 
 pub mod notification;
 
