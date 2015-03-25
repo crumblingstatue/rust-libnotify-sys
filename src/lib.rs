@@ -1,8 +1,8 @@
 #![feature(libc)]
 
 extern crate libc;
-extern crate "glib-2_0-sys" as glib;
-extern crate "gobject-2_0-sys" as gobject;
+extern crate glib_2_0_sys as glib;
+extern crate gobject_2_0_sys as gobject;
 
 pub mod notification;
 
