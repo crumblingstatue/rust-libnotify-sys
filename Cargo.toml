@@ -13,6 +13,7 @@ build = "build.rs"
 links = "libnotify"
 
 [dependencies]
+libc = "0.1.5"
 glib-2_0-sys = "*"
 gobject-2_0-sys = "*"
 
