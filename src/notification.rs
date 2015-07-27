@@ -2,8 +2,7 @@ use gobject::GObject;
 use libc::c_char;
 use glib::GError;
 
-#[repr(C)]
-struct NotifyNotificationPrivate;
+enum NotifyNotificationPrivate {}
 
 #[repr(C)]
 pub struct NotifyNotification {
