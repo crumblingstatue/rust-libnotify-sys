@@ -1,13 +1,14 @@
 extern crate libc;
 extern crate glib_2_0_sys as glib;
 extern crate gobject_2_0_sys as gobject;
+extern crate gtypes;
 
 pub mod notification;
 
 pub use notification::*;
 
 use libc::c_char;
-use glib::types::gboolean;
+use gtypes::gboolean;
 
 use glib::GList;
 

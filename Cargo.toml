@@ -16,6 +16,7 @@ links = "libnotify"
 libc = "0.1.5"
 glib-2_0-sys = "*"
 gobject-2_0-sys = "*"
+gtypes = "*"
 
 [build-dependencies]
 pkg-config = "0.3"
