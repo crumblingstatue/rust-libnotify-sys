@@ -13,7 +13,7 @@ enum NotifyNotificationPrivate {}
 #[repr(C)]
 pub struct NotifyNotification {
     _parent_object: GObject,
-    _priv_: NotifyNotificationPrivate
+    _priv_: NotifyNotificationPrivate,
 }
 
 extern "C" {
