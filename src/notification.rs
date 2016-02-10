@@ -1,5 +1,5 @@
+use std::os::raw::c_char;
 use gobject::GObject;
-use libc::c_char;
 use glib::GError;
 
 enum NotifyNotificationPrivate {}
