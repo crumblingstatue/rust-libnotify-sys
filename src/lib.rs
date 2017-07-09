@@ -71,4 +71,6 @@ extern "C" {
 
     pub fn notify_notification_set_image_from_pixbuf(notification: *mut NotifyNotification,
                                                       pixbuf: *mut GdkPixbuf);
+
+    pub fn notify_notification_clear_hints(notification: *mut NotifyNotification);
 }
