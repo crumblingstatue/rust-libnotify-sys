@@ -11,9 +11,10 @@ fn main() {
             panic!("Failed to init libnotify");
         }
 
-        let notif = notify_notification_new("Hello\0".as_ptr() as *const c_char,
-                                            "World\0".as_ptr() as *const c_char,
-                                            ptr::null());
+        let notif =
+            notify_notification_new("Hello\0".as_ptr() as *const c_char,
+                                    "World\0".as_ptr() as *const c_char,
+                                    ptr::null());
         let mut error = ptr::null_mut();
         notify_notification_show(notif, &mut error);
 

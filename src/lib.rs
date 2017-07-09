@@ -1,21 +1,24 @@
-extern crate gobject_2_0_sys as gobject;
 extern crate glib_sys as glib;
+extern crate gobject_2_0_sys as gobject;
 extern crate gtypes;
 
+use glib::{GList, GError, GVariant};
+use gobject::GObject;
+use gtypes::gboolean;
 use std::os::raw::c_char;
 use std::os::raw::c_int;
-use gtypes::gboolean;
-use gobject::GObject;
 
-use glib::{GList, GError, GVariant};
+
 
 enum NotifyNotificationPrivate {}
+
 
 #[repr(C)]
 pub struct NotifyNotification {
     _parent_object: GObject,
     _priv_: NotifyNotificationPrivate,
 }
+
 
 extern "C" {
     pub fn notify_init(app_name: *const c_char) -> gboolean;
@@ -47,7 +50,8 @@ extern "C" {
     pub fn notify_notification_update(notification: *mut NotifyNotification,
                                       summary: *const c_char,
                                       body: *const c_char,
-                                      icon: *const c_char) -> gboolean;
+                                      icon: *const c_char)
+                                      -> gboolean;
 
     pub fn notify_notification_set_timeout(notification: *mut NotifyNotification, timeout: c_int);
 }
