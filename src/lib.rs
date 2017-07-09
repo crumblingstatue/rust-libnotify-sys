@@ -54,4 +54,7 @@ extern "C" {
                                       -> gboolean;
 
     pub fn notify_notification_set_timeout(notification: *mut NotifyNotification, timeout: c_int);
+
+    pub fn notify_notification_set_category(notification: *mut NotifyNotification,
+                                             category: *const c_char);
 }
