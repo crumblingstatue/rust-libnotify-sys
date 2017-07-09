@@ -1,5 +1,5 @@
-extern crate glib_2_0_sys as glib;
 extern crate gobject_2_0_sys as gobject;
+extern crate glib_sys as glib;
 extern crate gtypes;
 
 use std::os::raw::c_char;
