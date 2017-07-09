@@ -73,4 +73,7 @@ extern "C" {
                                                       pixbuf: *mut GdkPixbuf);
 
     pub fn notify_notification_clear_hints(notification: *mut NotifyNotification);
+
+    pub fn notify_notification_close(notification: *mut NotifyNotification,
+                                      error: *mut *mut GError);
 }
