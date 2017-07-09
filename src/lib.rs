@@ -1,7 +1,9 @@
+extern crate gdk_pixbuf_sys;
 extern crate glib_sys as glib;
 extern crate gobject_2_0_sys as gobject;
 extern crate gtypes;
 
+use gdk_pixbuf_sys::GdkPixbuf;
 use glib::{GList, GError, GVariant};
 use gobject::GObject;
 use gtypes::gboolean;
@@ -66,4 +68,7 @@ extern "C" {
 
     pub fn notify_notification_set_urgency(notification: *mut NotifyNotification,
                                             urgency: NotifyUrgency);
+
+    pub fn notify_notification_set_image_from_pixbuf(notification: *mut NotifyNotification,
+                                                      pixbuf: *mut GdkPixbuf);
 }
