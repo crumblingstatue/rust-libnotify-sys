@@ -19,6 +19,12 @@ pub struct NotifyNotification {
     _priv_: NotifyNotificationPrivate,
 }
 
+#[repr(C)]
+pub enum NotifyUrgency {
+    NotifyUrgencyLow,
+    NotifyUrgencyNormal,
+    NotifyUrgencyCritical,
+}
 
 extern "C" {
     pub fn notify_init(app_name: *const c_char) -> gboolean;
@@ -57,4 +63,7 @@ extern "C" {
 
     pub fn notify_notification_set_category(notification: *mut NotifyNotification,
                                              category: *const c_char);
+
+    pub fn notify_notification_set_urgency(notification: *mut NotifyNotification,
+                                            urgency: NotifyUrgency);
 }
