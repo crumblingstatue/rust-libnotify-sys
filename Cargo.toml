@@ -6,7 +6,7 @@ authors = ["Mika Attila <radiantstatue@gmail.com>", "Julian Ospald <hasufell@pos
 license = "MIT"
 description = "FFI bindings to libnotify"
 readme = "README.md"
-repository = "https://github.com/crumblingstatue/rust-libnotify-sys"
+repository = "https://github.com/hasufell/rust-libnotify-sys"
 keywords = ["libnotify", "notification"]
 
 build = "build.rs"
