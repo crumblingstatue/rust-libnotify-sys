@@ -1,6 +1,6 @@
 extern crate gdk_pixbuf_sys;
 extern crate glib_sys as glib;
-extern crate gobject_2_0_sys as gobject;
+extern crate gobject_sys as gobject;
 extern crate gtypes;
 
 use gdk_pixbuf_sys::GdkPixbuf;
