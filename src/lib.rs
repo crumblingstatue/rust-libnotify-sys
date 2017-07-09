@@ -42,4 +42,9 @@ extern "C" {
     pub fn notify_notification_set_hint(notification: *mut NotifyNotification,
                                         key: *const c_char,
                                         value: *mut GVariant);
+
+    pub fn notify_notification_update(notification: *mut NotifyNotification,
+                                      summary: *const c_char,
+                                      body: *const c_char,
+                                      icon: *const c_char) -> gboolean;
 }
