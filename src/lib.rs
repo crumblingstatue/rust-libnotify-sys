@@ -6,7 +6,7 @@ use std::os::raw::c_char;
 use gtypes::gboolean;
 use gobject::GObject;
 
-use glib::{GList, GError};
+use glib::{GList, GError, GVariant};
 
 enum NotifyNotificationPrivate {}
 
@@ -38,4 +38,8 @@ extern "C" {
 
     pub fn notify_notification_show(notification: *mut NotifyNotification,
                                     error: *mut *mut GError);
+
+    pub fn notify_notification_set_hint(notification: *mut NotifyNotification,
+                                        key: *const c_char,
+                                        value: *mut GVariant);
 }
