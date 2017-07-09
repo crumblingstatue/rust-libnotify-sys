@@ -3,6 +3,7 @@ extern crate glib_sys as glib;
 extern crate gtypes;
 
 use std::os::raw::c_char;
+use std::os::raw::c_int;
 use gtypes::gboolean;
 use gobject::GObject;
 
@@ -47,4 +48,6 @@ extern "C" {
                                       summary: *const c_char,
                                       body: *const c_char,
                                       icon: *const c_char) -> gboolean;
+
+    pub fn notify_notification_set_timeout(notification: *mut NotifyNotification, timeout: c_int);
 }
