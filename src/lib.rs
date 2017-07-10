@@ -1,12 +1,10 @@
 extern crate gdk_pixbuf_sys;
 extern crate glib_sys as glib;
 extern crate gobject_sys as gobject;
-extern crate gtypes;
 
 use gdk_pixbuf_sys::GdkPixbuf;
-use glib::{GList, GError, GVariant};
+use glib::{GList, GError, GVariant, gboolean};
 use gobject::GObject;
-use gtypes::gboolean;
 use std::os::raw::c_char;
 use std::os::raw::c_int;
 
